@@ -9,7 +9,9 @@ const Hero = () => {
     "Full Stack Developer",
     "Software Engineer",
     "Software Developer",
-    "MERN Stack Developer"
+    "AI Developer",
+    "AI Engineer",
+    "Data Scientist"
   ];
 
   const [index, setIndex] = useState(0);
@@ -23,7 +25,7 @@ const Hero = () => {
 
   const stats = [
     { label: 'DSA Problems', value: '225+', icon: <Code2 size={20} /> },
-    { label: 'Projects', value: '5+', icon: <Award size={20} /> },
+    { label: 'Projects', value: '12+', icon: <Award size={20} /> },
     { label: 'Internship', value: 'Exp.', icon: <Briefcase size={20} /> }
   ];
 

@@ -1,16 +1,18 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { BookOpen, Code, Database, Server, Terminal, Settings } from 'lucide-react';
+import { Code, Database, Server, Terminal, Settings, Cpu, Layers, BookOpen, Layout } from 'lucide-react';
 import './Skills.css';
 
 const Skills = () => {
   const skills = [
-    { category: 'Language', items: ['Java', 'JavaScript', 'SQL'], icon: <Code size={20} />, color: 'skill-cyan-emerald' },
-    { category: 'Frontend', items: ['React.js', 'HTML', 'CSS', 'Tailwind CSS'], icon: <Terminal size={20} />, color: 'skill-cyan-blue' },
-    { category: 'Backend', items: ['Node.js', 'Express.js', 'REST APIs'], icon: <Server size={20} />, color: 'skill-blue-purple' },
-    { category: 'Databases', items: ['MongoDB', 'Redis'], icon: <Database size={20} />, color: 'skill-orange-rose' },
-    { category: 'Editors & Tools', items: ['Git', 'GitHub', 'VS Code', 'Postman'], icon: <Settings size={20} />, color: 'skill-indigo' },
-    { category: 'Core CS', items: ['DSA (225+ Solved)', 'OOPS', 'DBMS'], icon: <BookOpen size={20} />, color: 'skill-pink-rose' }
+    { category: 'Languages', items: ['Python', 'Java', 'JavaScript (ES6+)', 'SQL'], icon: <Code size={20} />, color: 'skill-cyan-emerald' },
+    { category: 'Frontend', items: ['HTML', 'CSS', 'Tailwind CSS', 'React.js'], icon: <Layout size={20} />, color: 'skill-cyan-blue' },
+    { category: 'Backend', items: ['Node.js', 'Express.js', 'REST APIs', 'JWT Authentication'], icon: <Server size={20} />, color: 'skill-blue-purple' },
+    { category: 'AI / Generative AI', items: ['LLMs', 'LangChain', 'RAG', 'Prompt Engineering', 'OpenAI API', 'Gemini API', 'Hugging Face'], icon: <Cpu size={20} />, color: 'skill-pink-rose' },
+    { category: 'Frameworks', items: ['FastAPI', 'Streamlit', 'React.js', 'Express.js', 'Tailwind CSS'], icon: <Terminal size={20} />, color: 'skill-blue-purple' },
+    { category: 'Databases', items: ['MongoDB', 'MySQL', 'Redis', 'FAISS Vector Database'], icon: <Database size={20} />, color: 'skill-orange-rose' },
+    { category: 'Tools', items: ['Git', 'GitHub', 'Docker', 'Postman', 'VS Code', 'Vercel', 'Render'], icon: <Settings size={20} />, color: 'skill-indigo' },
+    { category: 'Core CS', items: ['DSA (225+ Solved)', 'OOPs', 'DBMS'], icon: <BookOpen size={20} />, color: 'skill-pink-rose' }
   ];
 
   const containerVariants = {

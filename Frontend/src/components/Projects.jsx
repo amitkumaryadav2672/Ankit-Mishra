@@ -40,19 +40,61 @@ const Projects = () => {
       live: 'https://viva-mate-ai.vercel.app/',
       color: '#10b981',
       icon: <Code size={24} color="#10b981" />
+    },
+    {
+      title: 'Health Assistance Application (LLM)',
+      role: 'AI / LLM Developer',
+      duration: 'Python — LangChain — Gemini API — FastAPI',
+      description: [
+        'Built an AI-powered healthcare assistant using Gemini 1.5 Pro, LangChain, and Retrieval-Augmented Generation (RAG) to answer medical queries.',
+        'Implemented semantic search using embeddings, FAISS Vector Database, FastAPI, and Prompt Engineering for accurate context-aware responses.'
+      ],
+      tech: ['Python', 'LangChain', 'Gemini 1.5 Pro', 'FastAPI', 'FAISS', 'RAG'],
+      github: 'https://github.com/amitkumaryadav2672',
+      live: '#',
+      color: '#6366f1',
+      icon: <Database size={24} color="#6366f1" />
+    },
+    {
+      title: 'Conversational AI Chatbot for Customer Support',
+      role: 'AI Developer',
+      duration: 'Python — GPT-4o — LangChain — FastAPI',
+      description: [
+        'Developed an AI chatbot using GPT-4o, LangChain, FastAPI, and Prompt Engineering for automated customer support.',
+        'Implemented conversation memory, Retrieval-Augmented Generation (RAG), REST APIs, and intelligent context-aware response generation.'
+      ],
+      tech: ['Python', 'GPT-4o', 'LangChain', 'FastAPI', 'RAG', 'Memory API'],
+      github: 'https://github.com/amitkumaryadav2672',
+      live: '#',
+      color: '#eab308',
+      icon: <Terminal size={24} color="#eab308" />
+    },
+    {
+      title: 'DocuWiz AI – Intelligent Document Analyzer',
+      role: 'AI Developer',
+      duration: 'Python — FastAPI — Streamlit — LangChain',
+      description: [
+        'Built an AI-powered document analysis platform supporting PDF/DOCX summarization, semantic search, document retrieval, and intelligent question answering.',
+        'Developed a FastAPI backend with Streamlit frontend using LangChain, RAG, and FAISS Vector Database.'
+      ],
+      tech: ['Python', 'FastAPI', 'Streamlit', 'LangChain', 'RAG', 'FAISS'],
+      github: 'https://github.com/amitkumaryadav2672',
+      live: '#',
+      color: '#10b981',
+      icon: <Code size={24} color="#10b981" />
     }
   ];
 
   return (
-    <motion.section 
-      id="projects" 
+    <motion.section
+      id="projects"
       className="projects-section"
       initial={{ opacity: 0, x: -20 }}
       animate={{ opacity: 1, x: 0 }}
       exit={{ opacity: 0, x: 20 }}
       transition={{ duration: 0.5 }}
     >
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.3 }}
@@ -64,7 +106,7 @@ const Projects = () => {
 
       <motion.div style={{ y: yOffset }} className="projects-grid">
         {projects.map((project, index) => (
-          <motion.div 
+          <motion.div
             key={index}
             initial={{ opacity: 0, y: 50, rotateX: 10 }}
             whileInView={{ opacity: 1, y: 0, rotateX: 0 }}
@@ -82,13 +124,13 @@ const Projects = () => {
               <h3 className="project-title">{project.title}</h3>
               <p className="project-role">{project.role}</p>
               <p className="project-desc">{project.description}</p>
-              
+
               <ul className="project-tech">
                 {project.tech.map((t, i) => (
                   <li key={i}>{t}</li>
                 ))}
               </ul>
-              
+
               <div className="project-links">
                 <motion.a whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }} href={project.github} target="_blank" rel="noreferrer" className="project-link" aria-label="Github Repo">
                   <Github size={20} />

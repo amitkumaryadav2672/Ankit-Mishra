@@ -6,9 +6,13 @@ const Education = () => {
   const experience = [
     {
       role: 'Software Developer Intern',
-      company: 'WebSeeder Technologies Private Limited',
-      date: 'Feb 2026 - Present',
-      desc: 'Developing "Quick AI Platform" using MERN. Worked on Redis Cache optimization, integrated Clerk/Gemini AI, and collaborated via Git/GitHub for debugging and bug fixing.'
+      company: 'WebSeeder Technologies Pvt. Ltd.',
+      date: 'Apr 2026 – June 2026',
+      desc: [
+        'Developed full-stack web applications using React.js, Node.js, Express.js, MongoDB.',
+        'Built responsive UI, integrated REST APIs, and managed authentication/database operations.',
+        'Worked on Redis Cache optimization, Git/GitHub collaboration, debugging, and bug fixing.'
+      ]
     },
     {
       role: 'MERN Stack Development Trainee | Intern',
@@ -62,7 +66,15 @@ const Education = () => {
                 >
                   <h3>{exp.role}</h3>
                   <p className="school">{exp.company}</p>
-                  <p className="exp-desc">{exp.desc}</p>
+                  {Array.isArray(exp.desc) ? (
+                    <ul className="exp-desc-list">
+                      {exp.desc.map((point, idx) => (
+                        <li key={idx}>{point}</li>
+                      ))}
+                    </ul>
+                  ) : (
+                    <p className="exp-desc">{exp.desc}</p>
+                  )}
                   <div className="edu-meta">
                     <span className="date gradient-text">{exp.date}</span>
                   </div>
