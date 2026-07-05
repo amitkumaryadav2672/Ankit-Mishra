@@ -1,17 +1,20 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Code, Database, Server, Terminal, Settings, Cpu, Layers, BookOpen, Layout } from 'lucide-react';
+import { Code, Database, Server, Terminal, Settings, Cpu, Layers, BookOpen, Layout, Brain, BarChart2 } from 'lucide-react';
 import './Skills.css';
 
 const Skills = () => {
   const skills = [
     { category: 'Languages', items: ['Python', 'Java', 'JavaScript (ES6+)', 'SQL'], icon: <Code size={20} />, color: 'skill-cyan-emerald' },
+    { category: 'Data Science', items: ['Data Collection', 'Data Cleaning', 'Data Preprocessing', 'Exploratory Data Analysis (EDA)', 'Data Analysis', 'Feature Engineering', 'Statistical Analysis', 'Machine Learning', 'Model Evaluation', 'Data Validation', 'Documentation'], icon: <Brain size={20} />, color: 'skill-pink-rose' },
+    { category: 'Python Libraries', items: ['Pandas', 'NumPy', 'Scikit-learn', 'Matplotlib'], icon: <Layers size={20} />, color: 'skill-cyan-blue' },
     { category: 'Frontend', items: ['HTML', 'CSS', 'Tailwind CSS', 'React.js'], icon: <Layout size={20} />, color: 'skill-cyan-blue' },
     { category: 'Backend', items: ['Node.js', 'Express.js', 'REST APIs', 'JWT Authentication'], icon: <Server size={20} />, color: 'skill-blue-purple' },
-    { category: 'AI / Generative AI', items: ['LLMs', 'LangChain', 'RAG', 'Prompt Engineering', 'OpenAI API', 'Gemini API', 'Hugging Face'], icon: <Cpu size={20} />, color: 'skill-pink-rose' },
+    { category: 'AI / Generative AI', items: ['LLMs', 'LangChain', 'RAG', 'Prompt Engineering', 'OpenAI API', 'Gemini API', 'Hugging Face', 'FAISS Vector Database'], icon: <Cpu size={20} />, color: 'skill-pink-rose' },
     { category: 'Frameworks', items: ['FastAPI', 'Streamlit', 'React.js', 'Express.js', 'Tailwind CSS'], icon: <Terminal size={20} />, color: 'skill-blue-purple' },
-    { category: 'Databases', items: ['MongoDB', 'MySQL', 'Redis', 'FAISS Vector Database'], icon: <Database size={20} />, color: 'skill-orange-rose' },
-    { category: 'Tools', items: ['Git', 'GitHub', 'Docker', 'Postman', 'VS Code', 'Vercel', 'Render'], icon: <Settings size={20} />, color: 'skill-indigo' },
+    { category: 'Databases', items: ['MongoDB', 'MySQL', 'FAISS Vector Database'], icon: <Database size={20} />, color: 'skill-orange-rose' },
+    { category: 'Data Visualization', items: ['Power BI', 'Tableau', 'Matplotlib'], icon: <BarChart2 size={20} />, color: 'skill-cyan-emerald' },
+    { category: 'Tools', items: ['Git', 'GitHub', 'VS Code', 'Jupyter Notebook'], icon: <Settings size={20} />, color: 'skill-indigo' },
     { category: 'Core CS', items: ['DSA (225+ Solved)', 'OOPs', 'DBMS'], icon: <BookOpen size={20} />, color: 'skill-pink-rose' }
   ];
 

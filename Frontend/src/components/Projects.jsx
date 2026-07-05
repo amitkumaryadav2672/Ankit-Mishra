@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import { ExternalLink, Github, Terminal, Code, Database } from 'lucide-react';
+import { ExternalLink, Github, Terminal, Code, Database, BarChart2, Layers } from 'lucide-react';
 import './Projects.css';
 
 const Projects = () => {
@@ -82,6 +82,50 @@ const Projects = () => {
       live: '#',
       color: '#10b981',
       icon: <Code size={24} color="#10b981" />
+    },
+    {
+      title: 'LC Report & Approval Workflow Dashboard',
+      role: 'Data Analyst / BI Developer',
+      duration: 'Power BI — MySQL',
+      description: [
+        'Built a Power BI dashboard to monitor LC approval workflows and KPIs.',
+        'Queried MySQL using joins, aggregations, and window functions.',
+        'Designed KPI cards, slicers, and TAT reports.'
+      ],
+      tech: ['Power BI', 'MySQL', 'Python', 'SQL'],
+      github: 'https://github.com/amitkumaryadav2672',
+      live: '#',
+      color: '#3b82f6',
+      icon: <BarChart2 size={24} color="#3b82f6" />
+    },
+    {
+      title: 'INTRAFLEET – Vehicle Card Status & Work Order Dashboard',
+      role: 'Data Analyst / BI Developer',
+      duration: 'Power BI — SQL Server',
+      description: [
+        'Developed dashboards for 500+ vehicle records and work orders.',
+        'Created DAX measures, KPIs, drill-through reports, and data models.',
+        'Built executive dashboards for operational decision-making.'
+      ],
+      tech: ['Power BI', 'SQL Server', 'DAX', 'Data Modeling'],
+      github: 'https://github.com/amitkumaryadav2672',
+      live: '#',
+      color: '#eab308',
+      icon: <Layers size={24} color="#eab308" />
+    },
+    {
+      title: 'MIS Patratu – Production Dashboard',
+      role: 'Data Analyst / BI Developer',
+      duration: 'Power BI — PostgreSQL',
+      description: [
+        'Developed a production dashboard to track output and shift performance.',
+        'Used PostgreSQL and DAX measures for interactive reporting.'
+      ],
+      tech: ['Power BI', 'PostgreSQL', 'DAX', 'Data Analysis'],
+      github: 'https://github.com/amitkumaryadav2672',
+      live: '#',
+      color: '#10b981',
+      icon: <Terminal size={24} color="#10b981" />
     }
   ];
 
@@ -123,7 +167,17 @@ const Projects = () => {
               </div>
               <h3 className="project-title">{project.title}</h3>
               <p className="project-role">{project.role}</p>
-              <p className="project-desc">{project.description}</p>
+              <div className="project-desc">
+                {Array.isArray(project.description) ? (
+                  <ul>
+                    {project.description.map((desc, idx) => (
+                      <li key={idx}>{desc}</li>
+                    ))}
+                  </ul>
+                ) : (
+                  <p>{project.description}</p>
+                )}
+              </div>
 
               <ul className="project-tech">
                 {project.tech.map((t, i) => (
