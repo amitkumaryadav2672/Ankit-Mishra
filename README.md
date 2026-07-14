@@ -1,13 +1,12 @@
 # Ankit Mishra - Portfolio
 
-Professional portfolio built with React (Vite) and Node.js.
+Professional portfolio built with React (Vite).
 
 📢 **Status**: Seeking opportunities! I am seeking roles as a **Relationship Manager**, **Senior Key Account Manager**, or **Sales & Operations Specialist**. Feel free to contact me via LinkedIn or email!
 
 ## 📂 Project Structure
 
 - **`Frontend/`**: React source code, components, and assets.
-- **`Backend/`**: Node.js/Express server (handles email sending and pings).
 
 ## 🚀 Getting Started
 
@@ -16,13 +15,6 @@ Professional portfolio built with React (Vite) and Node.js.
 cd Frontend
 npm install
 npm run dev
-```
-
-### 2. Backend
-```bash
-cd Backend
-npm install
-node server.js
 ```
 
 ## 🛠 Features
