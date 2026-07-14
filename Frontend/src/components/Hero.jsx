@@ -1,17 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowRight, Download, Mail, Github, Linkedin, Briefcase, Award, Code2 } from 'lucide-react';
-import profileImg from '../assets/amit.jpeg';
+import { ArrowRight, Download, Mail, Linkedin, Briefcase, Award, TrendingUp } from 'lucide-react';
+import profileImg from '../assets/ankit.png';
 import './Hero.css';
 
 const Hero = () => {
   const titles = [
-    "Full Stack Developer",
-    "Software Engineer",
-    "Software Developer",
-    "AI Developer",
-    "AI Engineer",
-    "Data Scientist"
+    "Relationship Manager",
+    "Senior Key Account Manager",
+    "Sales & Operations Specialist",
+    "Client Retention Expert"
   ];
 
   const [index, setIndex] = useState(0);
@@ -24,9 +22,9 @@ const Hero = () => {
   }, []);
 
   const stats = [
-    { label: 'DSA Problems', value: '225+', icon: <Code2 size={20} /> },
-    { label: 'Projects', value: '12+', icon: <Award size={20} /> },
-    { label: 'Internship', value: 'Exp.', icon: <Briefcase size={20} /> }
+    { label: 'Years of Exp.', value: '9+', icon: <Briefcase size={20} /> },
+    { label: 'Key Branches', value: '102', icon: <Award size={20} /> },
+    { label: 'Revenue Growth', value: '20%+', icon: <TrendingUp size={20} /> }
   ];
 
   return (
@@ -48,7 +46,7 @@ const Hero = () => {
         <div className="image-frame glass-panel">
           <img
             src={profileImg}
-            alt="Amit Kumar Yadav"
+            alt="Ankit Mishra"
             className="large-profile-img"
           />
         </div>
@@ -62,7 +60,7 @@ const Hero = () => {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="hero-badge glass-panel"
         >
-          <span className="pulse-dot"></span> Software Developer Intern | WebSeeder Technologies
+          <span className="pulse-dot"></span> Relationship Manager | IndiaMART
         </motion.div>
 
         <motion.h1
@@ -71,7 +69,7 @@ const Hero = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="hero-title"
         >
-          Hi, I'm <span className="gradient-text">Amit Kumar Yadav</span><br />
+          Hi, I'm <span className="gradient-text">Ankit Mishra</span><br />
           <div className="rotating-title-container">
             <AnimatePresence mode="wait">
               <motion.span
@@ -94,7 +92,7 @@ const Hero = () => {
           transition={{ duration: 0.5, delay: 0.3 }}
           className="hero-subtitle"
         >
-          Building scalable web apps with MERN Stack. Motivated Computer Science undergraduate with 225+ solved DSA problems and strong expertise in Java & Web Technologies.
+          Results-driven Senior Key Account Manager with over 9 years of expertise in client servicing, sales, operations, and account management. Proven track record in driving revenue growth, optimizing supply chain and logistics, and managing key loan distribution channels.
         </motion.p>
 
         {/* Stats Section */}
@@ -124,10 +122,10 @@ const Hero = () => {
           <a href="#contact" className="btn btn-primary">
             Hire Me <ArrowRight size={18} />
           </a>
-          <a href="#projects" className="btn btn-secondary">
-            View Projects
+          <a href="#education" className="btn btn-secondary">
+            View Experience
           </a>
-          <a href="/Amit Kumar Yadav.pdf" download="Amit_Kumar_Yadav_Resume.pdf" className="btn btn-outline">
+          <a href="/Ankit Mishra.pdf" download="Ankit_Mishra_Resume.pdf" className="btn btn-outline">
             Resume <Download size={18} />
           </a>
         </motion.div>
@@ -139,9 +137,8 @@ const Hero = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.6 }}
         >
-          <a href="https://www.linkedin.com/in/amit-kumar-yadav-52a56529a/" target="_blank" rel="noreferrer" className="social-icon-link"><Linkedin size={22} /></a>
-          <a href="https://github.com/amitkumaryadav2672" target="_blank" rel="noreferrer" className="social-icon-link"><Github size={22} /></a>
-          <a href="mailto:yadavamit847412@gmail.com?subject=Let's discuss an opportunity&body=Let's discuss an opportunity" className="social-icon-link" aria-label="Send Email"><Mail size={22} /></a>
+          <a href="http://linkedin.com/in/ankit-mishra-565228127" target="_blank" rel="noreferrer" className="social-icon-link"><Linkedin size={22} /></a>
+          <a href="mailto:mishra.ankit612@gmail.com?subject=Let's discuss an opportunity&body=Let's discuss an opportunity" className="social-icon-link" aria-label="Send Email"><Mail size={22} /></a>
         </motion.div>
       </div>
     </motion.section>

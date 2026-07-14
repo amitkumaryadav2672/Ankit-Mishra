@@ -5,27 +5,70 @@ import './Education.css';
 const Education = () => {
   const experience = [
     {
-      role: 'Software Developer Intern',
-      company: 'WebSeeder Technologies Pvt. Ltd.',
-      date: 'Apr 2026 – June 2026',
+      role: 'Relationship Manager',
+      company: 'IndiaMART',
+      date: 'Jun 2023 - Present',
       desc: [
-        'Developed full-stack web applications using React.js, Node.js, Express.js, MongoDB.',
-        'Built responsive UI, integrated REST APIs, and managed authentication/database operations.',
-        'Worked on Redis Cache optimization, Git/GitHub collaboration, debugging, and bug fixing.'
+        'Delivered exceptional client servicing, enhancing customer satisfaction and retention rates by 20%.',
+        'Drove revenue generation initiatives, achieving a consistent 15% growth quarter-over-quarter.',
+        'Spearheaded team building activities, fostering collaboration and improving overall team productivity by 25%.',
+        'Led and managed high-performing teams of up to 10 members, ensuring timely project delivery and exceeding targets.',
+        'Coordinated cross-functional teams to optimize resource allocation and workflow efficiency.',
+        'Developed and executed strategic business development plans, expanding client base by 30% within one year.'
       ]
     },
     {
-      role: 'MERN Stack Development Trainee | Intern',
-      company: 'HopingMinds, Mohali',
-      date: 'Oct 2025 – Feb 2026',
-      desc: 'Developed "Trimly – Salon at Home Platform" as an internship project. Completed 6-month professional training in MERN stack, built real-world projects with REST APIs, and managed full-stack integration.'
+      role: 'Assistant Manager',
+      company: 'IndiaMART',
+      date: 'Nov 2021 - Jun 2023',
+      desc: [
+        'Supervised and coordinated client servicing operations to boost customer satisfaction and improve retention rates.',
+        'Delivered high-quality support individually, resolving client issues efficiently and effectively.',
+        'Implemented targeted client engagement strategies, increasing service renewal rates by 12%.',
+        'Streamlined communication channels between clients and internal teams, enhancing response time by 15%.'
+      ]
+    },
+    {
+      role: 'Senior Executive Sales Manager',
+      company: 'Ninjacart',
+      date: 'Jan 2021 - Oct 2021',
+      desc: [
+        'Led procurement operations for the Fruits Department, coordinating directly with farmers to optimize supply chain efficiency.',
+        'Managed end-to-end logistics solutions, ensuring cost-effective transport and timely delivery, resulting in a 15% reduction in operational expenses.',
+        'Expanded market reach by onboarding key clients in Bhopal, Jabalpur, and Indore, increasing regional sales by 20%.',
+        'Oversaw P&L of logistics and sales processes, driving profitability through strategic cost control.',
+        'Ensured timely payment collections, reducing receivables aging by 25% and enhancing cash flow.'
+      ]
+    },
+    {
+      role: 'Administration Manager',
+      company: 'Prayag Consultancy & Services',
+      date: 'May 2018 - Dec 2020',
+      desc: [
+        'Managed lead generation through targeted market campaigns and cold calling across the Allahabad region, driving consistent pipeline growth.',
+        'Channelled leads to partnered banks and NBFCs for personal, business, home loans and LAP, improving disbursement efficiency.',
+        'Sourced leads via references, DSAs, channel partners and marketing initiatives to diversify pipeline.',
+        'Enhanced lead conversion rates by optimizing stakeholder communication, resulting in a 12% increase in loan disbursal efficiency.',
+        'Led FASTag issuance operations for Bank of Baroda across 102 branches by establishing tie-ups with toll plazas and automobile showrooms, increasing issuance volume by 27%.'
+      ]
+    },
+    {
+      role: 'Channel Partner',
+      company: 'Andromeda Sales And Distribution PVT Ltd',
+      date: 'Jan 2017 - Apr 2018',
+      desc: [
+        'Generated leads through market campaigns and cold calling across the Allahabad region.',
+        'Channelled leads to partner banks and NBFCs to facilitate timely loan disbursements for various loan products.',
+        'Sourced leads via references, DSAs, channel partners and marketing initiatives.',
+        'Improved lead conversion by streamlining stakeholder communication and maintaining strong relationships within the financial ecosystem.'
+      ]
     }
   ];
 
   const education = [
-    { degree: 'B.Tech, Computer Science Engineering', school: 'Chandigarh Engineering College Landran, Mohali', date: '2022 - 2026', score: 'CGPA: 7.3/10' },
-    { degree: 'Intermediate (B.S.E.B)', school: 'B.S.E.B', date: '2020 - 2021', score: '80.08%' },
-    { degree: 'Matriculation (B.S.E.B)', school: 'B.S.E.B', date: '2018 - 2019', score: '80.02%' }
+    { degree: 'B.A - Bachelor of Arts | Arts & Humanities', school: 'Allahabad University', date: '2016', score: 'Marks: 61.2%' },
+    { degree: '12th Grade', school: 'Uttar Pradesh Board (English)', date: '2011', score: 'Marks: 84%' },
+    { degree: '10th Grade', school: 'Uttar Pradesh Board (English)', date: '2009', score: 'Marks: 75%' }
   ];
 
   return (
